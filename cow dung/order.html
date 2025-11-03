@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order - Cow Dung Creations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #f9fff2, #e8f5e9);
+      color: #2f3e2f;
+      text-align: center;
+    }
+
+    header {
+      background: #3a5a40;
+      color: white;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2em;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .order-section {
+      max-width: 600px;
+      margin: 60px auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .order-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2em;
+      color: #355834;
+      margin-bottom: 10px;
+    }
+
+    .order-section p {
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    label {
+      text-align: left;
+      font-weight: 500;
+      margin-bottom: 5px;
+      color: #2f3e2f;
+    }
+
+    input, select, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-size: 1em;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #81b29a;
+      outline: none;
+      box-shadow: 0 0 5px rgba(129, 178, 154, 0.5);
+    }
+
+    .btn {
+      background: #81b29a;
+      color: white;
+      padding: 12px 0;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #52796f;
+    }
+
+    footer {
+      background: #3a5a40;
+      color: white;
+      padding: 15px 0;
+      margin-top: 60px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🛒 Order Cow Dung Creations</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="order.html">Order Now</a>
+    </nav>
+  </header>
+
+  <section class="order-section">
+    <h2>Place Your Order</h2>
+    <p>Fill in your details below and embrace the eco-friendly revolution 🌱</p>
+
+    <form action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="product">Choose Product:</label>
+      <select id="product" name="product" required>
+        <option value="">-- Select a Product --</option>
+        <option value="Cow Dung Cake">Cow Dung Cake</option>
+        <option value="Dung Powder">Dung Powder</option>
+        <option value="Havan Cups">Havan Cups</option>
+        <option value="Organic Manure">Organic Manure</option>
+      </select>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter number of items" required>
+
+      <label for="address">Delivery Address:</label>
+      <textarea id="address" name="address" rows="4" placeholder="Enter your delivery address" required></textarea>
+
+      <button type="submit" class="btn">Submit Order</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Cow Dung Creations | Go Green, Stay Clean 🌎</p>
+  </footer>
+</body>
+</html>
